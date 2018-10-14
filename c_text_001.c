@@ -1,5 +1,5 @@
-//µÚÒ»ÖÜ
-/*scanf()¡¢printf()¡¢IF/switch/Ñ­»·½á¹¹ 
+//ç¬¬ä¸€å‘¨
+/*scanf()ã€printf()ã€IF/switch/å¾ªç¯ç»“æ„ 
 */ 
 #include<stdio.h>
 
