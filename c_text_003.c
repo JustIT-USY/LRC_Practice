@@ -1,28 +1,28 @@
-//¶àÖØif else Óï¾ä
+//å¤šé‡if else è¯­å¥
 
 #include <stdio.h>
 int main() 
 {
     int tmp ;
-    printf("ÇëÊäÈëÄãÒª²ÂµÄÊı×Ö£º");
+    printf("è¯·è¾“å…¥ä½ è¦çŒœçš„æ•°å­—ï¼š");
 	scanf("%d", &tmp);
 
     if (tmp>=10000)
     {
-        printf("×êÊ¯Íæ¼Ò");
+        printf("é’»çŸ³ç©å®¶");
     }
     else if (tmp<=5000)
     {
-        printf("°×½ğÍæ¼Ò");    
+        printf("ç™½é‡‘ç©å®¶");    
     }
      else if (tmp>8000)
     {
-        printf("²¬½ğÍæ¼Ò");    
+        printf("é“‚é‡‘ç©å®¶");    
     }
     
         else
     {
-        printf("ºÚÍÁ½ğÍæ¼Ò");    
+        printf("é»‘åœŸé‡‘ç©å®¶");    
     }
   
     return 0;
