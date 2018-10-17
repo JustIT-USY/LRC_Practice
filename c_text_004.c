@@ -1,3 +1,4 @@
+//9*9联表
 #include <stdio.h>
 int main() 
 { 
