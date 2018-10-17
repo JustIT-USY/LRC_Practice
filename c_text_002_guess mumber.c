@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
-void menu()//±àĞ´Ä¿Â¼
+void menu()//ç¼–å†™ç›®å½•
 {
 	printf("=========================\n");
 	printf("*****1.Paly***0.Exit*****\n");
@@ -9,33 +9,33 @@ void menu()//±àĞ´Ä¿Â¼
 }
 void paly_game()
 {
-	int rand_num = rand() % 100;//²úÉú0--99Ö®¼äµÄËæ»úÊı
+	int rand_num = rand() % 100;//äº§ç”Ÿ0--99ä¹‹é—´çš„éšæœºæ•°
 	int tmp = 0;
-	while (1)//Ñ¡Ôñ¡°1¡±¿ªÊ¼ÓÎÏ·
+	while (1)//é€‰æ‹©â€œ1â€å¼€å§‹æ¸¸æˆ
 	{
-		printf("ÇëÊäÈëÄãÒª²ÂµÄÊı×Ö£º<");
+		printf("è¯·è¾“å…¥ä½ è¦çŒœçš„æ•°å­—ï¼š<");
 		scanf_s("%d", &tmp);
 		if (tmp > rand_num)
 		{
-			printf("²Â´óÁË£¡\n");
+			printf("çŒœå¤§äº†ï¼\n");
 		}
 		else if (tmp < rand_num)
 		{
-			printf("²ÂĞ¡ÁË£¡\n");
+			printf("çŒœå°äº†ï¼\n");
 		}
 		else
 		{
-			printf("¹§Ï²Äã£¬²Â¶ÔÁË£¡");
+			printf("æ­å–œä½ ï¼ŒçŒœå¯¹äº†ï¼");
 		}
 	}
 }
 int main()
 {
 		int input = 0;
-		srand((unsigned int)time(NULL));//srandº¯ÊıÉèÖÃËæ»úÊı²úÉúÆ÷
+		srand((unsigned int)time(NULL));//srandå‡½æ•°è®¾ç½®éšæœºæ•°äº§ç”Ÿå™¨
 		do{
 		menu();
-		printf("ÇëÑ¡Ôñ£º<\n");
+		printf("è¯·é€‰æ‹©ï¼š<\n");
 		scanf_s("%d", &input);
 		switch (input)
 		{
@@ -46,7 +46,7 @@ int main()
 			exit(0);
 			break;
 		default:
-			printf("Ñ¡ÔñµÄ´íÎó£¡\n");
+			printf("é€‰æ‹©çš„é”™è¯¯ï¼\n");
 		}
 	} while (input);
 	return 0;
