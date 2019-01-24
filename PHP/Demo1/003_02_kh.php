@@ -1,4 +1,5 @@
 <?php
+header('content-type:text/html;charset=utf-8');
       echo '花括号的两个作用';
       echo '</br>';
       //PHP引擎在解析变量时候，会尽可能多地向后取得字符（认为取得多更准确！）
@@ -36,6 +37,8 @@
       echo $strin;
       echo '</br>';
             $strin=substr($strin,1);//$strin{1}='';→→可能因为php版本原因报错~
+            //substr() 函数返回字符串的一部分。
+            // 数字为几，则返回那个数字标记后面的字段
       echo $strin;
 
       echo '<hr/>';
@@ -49,5 +52,5 @@
       $string{5}='e';
       echo $string;//只显示一个空格
       var_dump($string);//实际长度6位（两个空格）
-      
+
 ?>
