@@ -1,12 +1,8 @@
 <?php
 $username='111';
 $lastNmae="222";
-echo &username&lastNmae;
-echo'</br>';
+echo &username;
 
-//声明整形
-// //十进制
-// $var123='123';
-// echo "$var123";
-//
+echo'</br>';
+echo'$username'//' 会输出‘’其中的内容；
  ?>
