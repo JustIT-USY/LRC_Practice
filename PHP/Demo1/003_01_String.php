@@ -1,4 +1,5 @@
 <?php
+header('content-type:text/html;charset=utf-8');
 //定界符：单引号/双引号/heredoc/nowdoc；
         $username='云儿';
         $usernames='云儿~';
@@ -38,7 +39,31 @@ echo '</br>';
       echo "<hr/>";
   echo "$strs";
       echo "<hr/>";
-  //混合输入→双引号
+      echo '<hr/>';
+      echo '花括号的两个作用';
+      echo '</br>';
+  //PHP引擎在解析变量时候，会尽可能多地向后取得字符（认为取得多更准确！）
+  // //解决方式：花括号！→1.可以将PHP中的变量扩成一个整体；
+  //                     2.可以对字符串中的指定字符进行增删改查操作
+  $username='Xlcjs.';
+    echo "我是{$username}哈哈哈哈";//花括号之间不要加空格（不然会当做普通字符！）
+    echo '</br>';
+    echo "我是${username}哈哈哈哈";
+echo '<hr/>';
+//对于字符串中的制定字符进行增删改查：
+  $string='abcdefg';
+  //查找
+
+  echo "$string{0}";
+
+  echo '</br>';
+
+  echo "$string{3}";
+
+
+
+
+
 
 
 
