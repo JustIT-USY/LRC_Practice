@@ -17,9 +17,9 @@ echo '<hr/>';
           echo '</br>';
           echo '</br>';
 /*输出变量中*/
-         echo '$username';//单引号不解析变量
+         echo '你好我是$username';//单引号不解析变量
          echo '</br>';
-         echo "$usernames";//双引号解析变量！
+         echo "你好我是$usernames";//双引号解析变量！
          echo "<H1>所以单引号解析效率更高!</H1>";
 echo '<hr/>';
 //想预览到这句话：He said "I'm fine".
