@@ -1,19 +1,17 @@
 <?php
 header('content-type:text/html;charset=utf-8');
       echo '花括号的两个作用';
-      echo '</br>';
+      echo '</br>整体</br>字符增删改查</br></br>';
       //PHP引擎在解析变量时候，会尽可能多地向后取得字符（认为取得多更准确！）
-      // //解决方式：花括号！→1.可以将PHP中的变量扩成一个整体；
-      //                     2.可以对字符串中的指定字符进行增删改查操作
+      // //解决方式：！花括号！
+//1.可以将PHP中的变量扩成一个整体；
       $username='Xlcjs.';
-      echo "我是{$username}哈哈哈哈";//花括号之间不要加空格（不然会当做普通字符！）
-      echo '</br>';
+      // echo "我是{$user name}哈哈哈哈";//花括号之间不要加空格（不然会当做普通字符！）
       echo "我是${username}哈哈哈哈";
       echo '<hr/>';
-      //对于字符串中的制定字符进行增删改查：
+//2.可以对字符串中的指定字符进行增删改查操作
       $string='abcdefg';
       //查找
-
       echo $string{0};
       echo '</br>';
       echo $string{3};
@@ -32,13 +30,13 @@ header('content-type:text/html;charset=utf-8');
       echo "所以不要对中文字符修改！";
 
       echo '<hr/>';
-      //删除→相当于用空字符中串替换
+      //删除→相当于用空字符中串替换（有点问题）
       $strin='abcdef';
       echo $strin;
       echo '</br>';
             $strin=substr($strin,1);//$strin{1}='';→→可能因为php版本原因报错~
-            //substr() 函数返回字符串的一部分。
-            // 数字为几，则返回那个数字标记后面的字段
+            /*使用的substr() 函数返回字符串的一部分。
+            数字为几，则返回那个数字标记后面的字段*/
       echo $strin;
 
       echo '<hr/>';
