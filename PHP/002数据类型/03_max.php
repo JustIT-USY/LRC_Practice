@@ -40,6 +40,4 @@ $c=3.123;
 var_dump($a,$b,$c);
 unset($a,$b,$c);
 var_dump($a,$b,$c);
-
-
 ?>
