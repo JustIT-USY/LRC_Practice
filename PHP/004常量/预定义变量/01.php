@@ -22,5 +22,7 @@ $_REQUEST ->包含$_GET;$_POST;$_COOKIE
 //像表单以get形式发送数据，包括像超链接
 //形式：$_GET[名称]
 */
-
+echo "通过学习，感觉在PHP 版本7.2.10中使用 \$_REQUEST 可能会出现Notice问题！可能是没有指定 数据传输方式"
+echo '<br/>';
+echo "通过\$_POST \$_GET 来与静态页面进行交互"
  ?>
