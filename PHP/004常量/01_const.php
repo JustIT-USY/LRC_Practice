@@ -1,4 +1,5 @@
-<?php
+
+ <?php
 // header('content-type:text/heml;charset=utf-8');
 //PHP中的常量
 //01系统常量-可以直接使用
